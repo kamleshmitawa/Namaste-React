@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>above on root</div>
+    <div>Header</div>
+
+    <!-- We can also create a small or more portions of the webpages in react  -->
+    <!-- React is only works on id that we passes while creating reactdom node -->
+    <div id="root">
+      <h1>heading inside root</h1>
+      <!-- // Is this will show to the dom ::: NOOOOO, Because reactdom.render will replaced the child of that id that we passes to the dom for creating element. That will not append child instead Replaced Childs.-->
+    </div>
+
+    <div>Below on root</div>
+    <div>Footer</div>
+
+    <!-- Hello JS using JS, This is how we create webpages using js without react  -->
+    <!-- <script>
+            const heading = document.createElement('h1');
+            heading.innerHTML = 'Hello JS!!!';
+
+            const root = document.getElementById('root');
+            root.appendChild(heading);
+    </script> -->
+    <!-- ----- -->
+
+    <!-- Hello React using React, This is how we create webpages using React -->
+    <script
+      async
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- <script>
+      //   const heading = React.createElement("h1", {}, "Hello React !!!!"); //This is just an simple h1 tag and {} is the attributes object that is called props object in react
+      const heading = React.createElement(
+        "h1",
+        { id: "heading", xyz: "abc" }, // this is props object
+        "Hello React !!!!" // this is also in props object as a children.
+      );
+
+      const root = ReactDOM.createRoot(document.getElementById("root")); // ReactDOM has to create a element and added to the dom.
+
+      console.log(heading);
+      root.render(heading); // ReactDOM is just taking an heading object and coverted it into a dom object and push into the dom.
+    </script> -->
+
+    <!-- Now lets move this above code into a separate js file. and import that js file here as we import js in html normally -->
+    <!-- move above code into a js file , and let check its working fine there as well -->
+    <script async src="./index.js"></script>
+  </body>
+</html>

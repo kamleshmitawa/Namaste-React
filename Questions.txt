@@ -1,0 +1,47 @@
+
+
+
+##### 2. IGNITE #########
+
+1. 
+
+
+
+
+
+
+
+
+#### 1. INCEPECTION #####
+
+1. What is CDN and crossorigin inside cdn link??? : CDN is Cross Delivery/Distrubution Network, where most of the liberaries are hosted so that anyone from anywhere can use without having the heavy load on the single server. It will distrubutes the load on the server. If user is located far from the server then it will take a long time to load files. instead the website content is stored on to the CDN server so that it geographically closer to the users and reaches there computer much faster.
+2. why we need to add React and React Dom or separate two files, Why they can't be clubbed into one file????: React is not only used with broswers, its used with other places like for mobile applicates in React-Native and React 3d, electron and many more. thats why React and React Dom both are two diff files. and React Dom is specific to browsers related code. these are just JS files . simply containes js code(variables, function, ..etc) like an another js file. 
+3. Why JSX ? ?? For the sake of simplicity. If we will not write jsx, our code will be so complex when our dom sturucture grows.
+4. Is React.createElement() retruns HTML node ? : NO, its just returns an object and passes to the ReactDom.render() it takes and object and create an object like dom and pushed into the dom so that our browser can understand.
+5. Is browser unserstands REACT ??? : NO, browser can only understand html, css and javascript. Thats why we need to import CDNs for react and react dom so that we can get all the functions/features of React and ReactDom and using those it will create broswer readable code. ReactDOM has the tasks to create object/code like dom so that our broswer can understand.
+6. can we move "<script async src="./index.js"></script>"file above to the React CDNS script?? : NO,Because, we know JS is Synchronus. It runs line by line top to bottom. If we move above to the cdn then out code will not able to find React and ReactDOM that we need in our file. Because before loading to the React and React dom CDN scripts our file will executed and React and ReactDOM will be undefined at that that. So thats why, We must have to keep out js file after the React and ReactDOM CDN imports.
+7. what happens if we write like:  
+    <div id="root">
+      <h1>heading inside root</h1>
+    </div>
+?????? : this heading will not be shown onto the browser, Because our React will work only on this root id and it REPLACED element inside that given id('root').Remember, It will not append child inside the root instead it Replaced the child/content/node.
+8. What happend if we write like:
+    <div>above to the root div</div>
+    <div id="root">
+      <h1>heading inside root</h1>
+    </div>
+    <div>below to the root div</div>
+    
+    ????: Above and Below both div will show same as it is used/defined here. but that having id 'root'(we can take any name here and use it inside our js/react file for create root element) everthing will be REPLACED by the reactdom.
+9. Can we use React with already/existing project, OR for a single Portion of the project?????? YES, we can use react even for the single portion (like, Header, footer, sidebar...etc) of our website. We just need to pass an id to that portion element and use that id for react. and add cdn for react and react dom presence.
+10. Diff between Liberarie or FrameWork ????? React is beautiful liberarie, we can create a whole project using react or even we can create a small portion of the webpage using react, or two or more portions of webpage. Because its an simple html js based liberary. BUT frameworks are comes with so much buildin tags and dependancies, restrictions so thats uses is limited.
+11. Can we import/embeed/use frameworks into and existing project or webpage in small protion???
+12. VS code have Emmet because of this , if we write html:5 it will automatically create a basic html file code into that file.
+
+
+
+
+
+
+
+
