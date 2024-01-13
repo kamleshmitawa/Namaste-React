@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>above on root</div>
     <div>Header</div>
 
     <!-- We can also create a small or more portions of the webpages in react  -->
     <!-- React is only works on id that we passes while creating reactdom node -->
     <div id="root">
-      <h1>heading inside root</h1>
+      <h1>Not Rendered</h1>
       <!-- // Is this will show to the dom ::: NOOOOO, Because reactdom.render will replaced the child of that id that we passes to the dom for creating element. That will not append child instead Replaced Childs.-->
     </div>
 
-    <div>Below on root</div>
     <div>Footer</div>
 
     <!-- Hello JS using JS, This is how we create webpages using js without react  -->
@@ -29,17 +27,6 @@
             root.appendChild(heading);
     </script> -->
     <!-- ----- -->
-
-    <!-- Hello React using React, This is how we create webpages using React -->
-    <script
-      async
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
 
     <!-- <script>
       //   const heading = React.createElement("h1", {}, "Hello React !!!!"); //This is just an simple h1 tag and {} is the attributes object that is called props object in react
@@ -57,6 +44,6 @@
 
     <!-- Now lets move this above code into a separate js file. and import that js file here as we import js in html normally -->
     <!-- move above code into a js file , and let check its working fine there as well -->
-    <script async src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
