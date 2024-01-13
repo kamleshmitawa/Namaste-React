@@ -36,5 +36,7 @@ LIke this Parcel is BEAST have all the super powers and all the powers is comes 
  Parcel  is take care of babel by our selfs for transpilies our code.
 
 9. Babel ????: Its a transpiler, transpiled code into ECMA script code that browsers understands. its also make code for old browsers so that old browsers can also understand the code. its take care about the code for browsers compatiablity.
-10. 
+10. JSX take care about CSR (Cross site scripting) attacks. Its sanatizing what is coming and then passing, it prevents injection attacks. JSX  is so powerfull, we don't need to take care about injection attacks.
+11. IF any api gives some malacious data and we directly using this data in jsx, But because of JSX we don't need to be worry about it. JSX takes care about it.it prevents these inject type of attacks.
+
 
