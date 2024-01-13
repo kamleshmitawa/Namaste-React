@@ -1,0 +1,40 @@
+1. What is JSX ???: JSX is NOT Javascript in HTML NOOOO...... , JSX is look like HTML or XML. JSX build on top of React.CreateElement.
+In background JSX using React.CreateElement to convert JS Object and passes to render.
+
+2. Is CreateElement is HTML Element ???: NOOOO.... It not a html element, Its an Javascript Object. 
+
+const heading = React.CreateElement("h1", 
+{ id: "heading"}, 
+{
+    "Namaste React 🚀"
+})
+
+
+console.log(heading) // Its an Object not HTML elemnt
+
+
+
+3. And We can Write about code in easiest way and more human readable code.
+using JSX
+
+const heading = <h1 id="heading"> Namaste React using JSX 🚀</h1> // this is exactly same as above createElement code
+
+console.log(heading) //this is also an Object. NOT HTML 
+
+ReactDOM.render(heading) // We are passing this object to ReactDOM. 
+4. Can browser understands JSX this object???? : NOOOOO.....Browser can understand html, css and plan js. Broswer can'nt understand JSX.
+
+5. So how this CreateElement object goes to broswer and browser understands?????: this JSX is developed by Facebook to simplifies React.CreateElement code , so that its more readable and understandable to all the developers not just React developers. 
+So What JSX do, Its converts the JSX into React.CreateElement object.
+and that object we pass to ReactDOM.Render(heading) to render our page into the browser.
+ ReactDOM has the ability ti render something on browsers its not the job of React. 
+
+6. What is BABEL ????? : Babel is transpiler: it transpiled our code into browsers readable code. so that broswers can unserstand our code and render that we passes into it for rendering.
+7. So Are we installing babel , where is babel in our project?????: No , we don't need to install babel excepetantily its all done by bundlers (parcel). 
+8. Parcel is Beast (PM of the country)??? All others are the under of PM with diff powers and these powers make PM powerfull Beast.
+LIke this Parcel is BEAST have all the super powers and all the powers is comes like multiple pacages that  are inside the parcel like babel.
+ Parcel  is take care of babel by our selfs for transpilies our code.
+
+9. Babel ????: Its a transpiler, transpiled code into ECMA script code that browsers understands. its also make code for old browsers so that old browsers can also understand the code. its take care about the code for browsers compatiablity.
+10. 
+

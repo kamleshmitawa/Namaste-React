@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/kamleshmitawa/Namaste-React#readme",
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "browserslist": "^4.22.2",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "browserslist": [
     "last 3 versions"
