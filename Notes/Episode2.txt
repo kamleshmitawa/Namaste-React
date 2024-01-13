@@ -1,0 +1,55 @@
+
+
+##### 2. IGNITE #########
+
+1.  What is git vs github?
+2. what is npm ? :::: NPM doesn't stands for node package manager. But it manages the packages. its a package manager but not node package manager.
+3. We have separate html, css, js files Is our app ready for production with these files??? ::: NOO, to make our app ready for production, we need to minified, cleaner, code. for the we need bundler to bundle our files in a small, optimized, minified, chunks.
+4. Create-react-app is using bundler??:: Yes, internally its uses bundler to make thinks production ready and its setup everthing for us when we create project using create-react-app.
+5. We are learning to create project without using create-react-app ??? YES, we are ignite our app by ourselfs without ready to use project.
+6. We need to npm in our project , why???? : To manages our packages. npm have lots of packages, it manages packages in our project using package.json and package-lock.json files. we can use "npm init" commond to install npm inside our project.
+7. What package.json file???? : This file hold all the packages configuration , dependancies , devdependancies and versions of our packages that we installed from npm. using this npm manager manages packages in our project. 
+8. what is package-lock.json file???? :: this file holds all the versions of the packages and those packages dependancies.and hashs and some more informations. 
+9. package.json VS package-lock.json ??????::: Package.json holds the exact version of the packages and they may be updated if any new updated version will come and we use "~" tild and "^" carret icons in front of versions. BUT package-lock.json file locks the version of the packages that we have before the automatic updates. 
+10. Diff btw "~" and "^" icon infront of versions ???? : tild "~" will update the major version if any major version update will comes then it will automatically updates when we do npm i. this will not be preffered. instead use "^" carrat icon , it shows the minor versions updates comes it will update. like "^2.3.4" if, "2.3.5" version will come it will update automatically when we do npm i. But if "~2.3.4" and "3.3.1" will come it will update and its a major update. we should not do this.
+11. waht are other bundlers ??? Webpack, Parcel, Vite etc. all the bundlers. create-react-app uses webpack.
+12. Which bundler we are going to use : Parcel
+13. node-module folder???: when we install parcel or any bundler. this folder will automatially created. it store all the depencides for parcel and packages inside it. a lots of things.
+14. "npm i -D parcel" why we use -D ????? : -D is used for installing pacage as a dev dependace, these dependances are not used for production.
+15. npx parcel index.html :::: run to ignite our app 
+16. what is npx ????? npm install means we are installin parcel/any package. But npx means we are executing that packages. index.html means its a source. parcel is build our code and parse this index.html 
+17. what is browserslist ? 
+18. What is Tree shaking ?: Remove unused code at the time of build.
+19. code  splitting?
+20. 
+
+
+#Parcel:
+1. hot reloading - HMR
+2. Caching - faster builds
+3. make separate builds for development and production for separate devices also
+4. minified and optimized code for build
+5. we can also pass browserslist for our application
+6.  image optimization
+7. compress
+8. bundling
+9. File watching algothrithm
+10. Error handling
+11. code splitting
+12. https
+13. Tree shaking - remove unused code
+14. diagonastic
+15. differential bundling- support older browsers also
+16. local server
+
+
+
+
+
+
+
+
+
+
+
+

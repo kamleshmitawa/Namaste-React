@@ -1,20 +1,8 @@
 
 
-
-##### 2. IGNITE #########
-
-1. 
-
-
-
-
-
-
-
-
 #### 1. INCEPECTION #####
 
-1. What is CDN and crossorigin inside cdn link??? : CDN is Cross Delivery/Distrubution Network, where most of the liberaries are hosted so that anyone from anywhere can use without having the heavy load on the single server. It will distrubutes the load on the server. If user is located far from the server then it will take a long time to load files. instead the website content is stored on to the CDN server so that it geographically closer to the users and reaches there computer much faster.
+1. What is CDN and cross-origin inside cdn link??? : CDN is Cross Delivery/Distrubution Network, where most of the liberaries are hosted so that anyone from anywhere can use without having the heavy load on the single server. It will distrubutes the load on the server. If user is located far from the server then it will take a long time to load files. instead the website content is stored on to the CDN server so that it geographically closer to the users and reaches there computer much faster.
 2. why we need to add React and React Dom or separate two files, Why they can't be clubbed into one file????: React is not only used with broswers, its used with other places like for mobile applicates in React-Native and React 3d, electron and many more. thats why React and React Dom both are two diff files. and React Dom is specific to browsers related code. these are just JS files . simply containes js code(variables, function, ..etc) like an another js file. 
 3. Why JSX ? ?? For the sake of simplicity. If we will not write jsx, our code will be so complex when our dom sturucture grows.
 4. Is React.createElement() retruns HTML node ? : NO, its just returns an object and passes to the ReactDom.render() it takes and object and create an object like dom and pushed into the dom so that our browser can understand.

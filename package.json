@@ -1,0 +1,30 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is namaste react app",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamleshmitawa/Namaste-React.git"
+  },
+  "author": "Kamlesh Mitawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamleshmitawa/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/kamleshmitawa/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "browserslist": "^4.22.2",
+    "prop-types": "^15.8.1"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ]
+}
