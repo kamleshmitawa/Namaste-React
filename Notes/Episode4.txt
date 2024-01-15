@@ -1,0 +1,10 @@
+1.config driven UI ????: UI is basically drivin by the config or data.config(the data of api is config).controlling ui by data.
+Our UI is getting change according to data that is coming from api.
+2. 
+
+
+
+
+
+
+
