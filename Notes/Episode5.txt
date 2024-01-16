@@ -1,0 +1,32 @@
+1. What is VDOM can we see????: YES, VDOM is Object representation of Real Dom. We can see Actual/Real Dom in the browser element or our <div> elements.
+And We can see VDOM by Console.log(<Header/>) or any component. its print the object representation in the console, that representation the react created using 
+React.createElement("h1", { }, {}) . like this.
+
+
+2. Reconsilation Process or React Fiber ???? this is the process of updating the dom using diffing algorithm . 
+What Diff algorithm do is comparing the Old VDOM and New VDOM and finds outs the diff and returns the updated dom and then Updates the 
+real dom. 
+
+Comparing the old dom to new dom and then updating the real dom that all process is called Reconsilation process / React Fiber. that comes in React 16.
+
+React Fiber: Its a new way of finding the diff and updating the dom. comes in 16 version. 
+
+
+3. Why React is Fast??? Because React Does  Efficient DOM manipulation. Because its have a VDOM. React runs algorithms on VDOM and efficiently Update the Real DOM.
+
+4. Is VDOM is for React or VDOM comes with React ???? NOOOO, VDOM is exists a long back. Its just a javascript object representation of RDOM. BUT Its popular when React comes.
+React Took that and build core alogorithm over that.
+
+SOOOO, React Find out the Diff Between VDOM and update the UI. Thats the core of react.
+
+5. Diff algo makes the Data and UI in a sync by updating the ui when founds the changes in between doms.
+
+6. incremental rendering??? the ability to split rendering work into chunks and spread it out over multiple frames.
+
+
+
+Imp:
+https://github.com/acdlite/react-fiber-architecture
+
+
+
