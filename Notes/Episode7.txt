@@ -1,0 +1,31 @@
+
+1. useEffect and useState
+2. React router 
+3. use createBrowserRouter: https://reactrouter.com/en/main/routers/create-browser-router
+4. How React is SPA ?????: Because React has only single page , But we can build multiple pages/routes with the use of react-router. React-router is not creating new pages, It just interchanges components according to routes.
+6. react router V6 ::::: In this version react-router comes with <Outlet/> this is automatically renders/interchanged childrens according to routes.
+7. It also takes care about the not found route:::: We can provide ErrorElemenet: <ErrorComponent/>
+8. useRouteError : Using this hook we can get the error object that comes in routes.
+9. Link vs <a> . Why we should use LINK over <a> tag ??????? Becuase <a> reloads the page, But Link will not reload the page it just move to the route and inter-change the compoenent according to the route.
+It is Very help in Optimization or makes our application super fast. We Must have to use <Link> that provides by react-router instead <a>.
+
+
+syntax is almost same:
+
+<a href="/home"></a> : It reloads the page, when clicked on it
+<Link to="/home"></Link> : It will not reload, just interchanged components acc. to path/url.
+
+
+10. 2 types of routing in web apps :::
+  a. Client Side Routing  : Don't make api calls to server
+  b. Server Side Routing : These make calls to server and get html/page from server.
+
+Client Side Routing is achieved using the History API, and this routing strategy only works with single page applications (SPAs) where all the routing logic is done on the client side.
+In SPA, Client Side Routing is achieved using react-router-dom and the routing happens entirely on the client side, the browser is not actually requesting new pages from the server, but the URLs change as the user navigates, and React interchangeably renders different components according to the route.
+
+Server Side Routing is achieved using actual server-side requests. It relies on the server to send different HTML pages for different URLs, meaning you have to load the whole page any time you want to navigate. This is how most web apps worked before client-side routing became popular.
+
+
+
+11. 
+
