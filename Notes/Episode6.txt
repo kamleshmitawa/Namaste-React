@@ -1,0 +1,52 @@
+1. Monolith Vs MicroServices ????? 
+
+Monolith:: Everthing in a single project. like DB, Frontend, Backend, Auth, Sms, etc. Everthing is in single project at one place. 
+When We do a small change or build the project, the whole project it build/compile and deploy. A big bulky project.
+
+Because of this every team is working on single project and their one deployment cycle and code repos etc.
+
+
+
+But in Today's time world it moving to MicroServices.
+
+
+
+
+2. MicroServices::: 
+We have diff services for diff jobs. means
+
+we have Diff service/project for Frontend
+diff for backend,SMS, DB, Auth, Email Notifications etc. 
+And All these services combines together and make a Big App.
+
+**
+This is know as Separation of Concerns.
+It Follows Single Responsibility Principle. When each and every service have its own job, nobody is interferring with it.
+Because of this every team is working on separate project and their own deployment cycle and code repos stc.
+
+And we can re-use these services with more then one project or any project. 
+We don't need to create same service for diff projects.
+
+3. In MicroServices, How these services intreact with eachother ???
+Every service  is deployed on diff ports. 
+like if Frontend project is deployed on 3000
+api: 4000
+and Backend: 30002
+Auth services: 3005
+etc....
+
+
+on diff ports we have deploy diff services.
+ and these ports can be map to domain name.  like :
+  /api => API is deployed on /api 
+  /SMS => SMS is deployed on /Sms
+  / => We can also deploy on /
+
+  For eg. 
+  Kamleshmitawa/
+  Kamleshmitawa/api : When we hit, As soon as it hit the port :4000
+  Kamleshmitawa/Sms : lets is its port is 5000
+  Kamleshmitawa/Frontend : lets assums its port is 3000
+
+
+  domain is same. services is diff and deployed on diff ports
