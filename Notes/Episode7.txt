@@ -27,5 +27,5 @@ Server Side Routing is achieved using actual server-side requests. It relies on 
 
 
 
-11. 
+
 

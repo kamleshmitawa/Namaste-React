@@ -1,0 +1,128 @@
+
+
+#Optimization Technique
+
+
+1. Single Responsibility Principle??????
+- In computer science it is a important Principle. 
+What does it mean ???? : Means Lets suppose, we have a class or function  that have only single Responsibility only.
+For eg:
+
+Lets say we have a function  to show the total price of the product ????
+
+So in single Responsibility, A one compoenent is to have only Responsibility of to show the price  and one have to calculate the price with any logic we have.
+
+
+there should not be anyther stuff for any other work. that function calculatePrice() have only single resposibility to calculate price. not  to check the payment status.
+
+
+We can creating a component in our react application, what are all these components these are functions right.
+So acc. to Principle, Every compoenent should have only single Responsibility. 
+
+For eg: 
+RestaurnatCard : Have a resposibility to how Restaurnat Cards only.
+RestaurnatMenu : Have a single resposibility to show the menu of Restaurnat only.
+Header: Header have a single resposibility to show header on the page.
+
+
+# Why we write our code using single resposibility Principle ????? 
+- Its easy to read or more readable
+- Easy to test  by write testcase of the compoenent.
+- modular compoenents/functions
+- Re-usable
+
+
+2.Custom Hooks:
+- what are Custom hooks??? Custom hooks are nothing just a utility function that separates our react logic into a separate function.
+
+What we will do , Just extract a resposibility/code  from a component  and put it in a new function/component/hook.
+So that our compoenent and our hook becames more modular/readable.
+
+
+Why we need to create Custom hooks???? 
+Fistly, Its not mandatory to create a Custom hooks. 
+But if we create a Custom hook for our compoenent, that will be more modular, more readable, and Re-usable. 
+We can use our logic into multiple places. 
+
+
+
+3. Code Splitting :- creating chunks for our application code that all is done by Parcel. 
+####ParcelTheBeast
+
+All these are #SAME, We use this tech to make our application faster.
+code splitting
+chunking
+dynamic bundling
+lazy loading
+on demand loading
+dynamic imports
+
+
+Initially we have one JS file for all of our project/code. If we have 10000 of code/file so when we create a build, it will create a single JS file for that.
+in production its a minified . but still its size is big. because of single file for lots of code.
+
+
+So What we can do, we can use code splitting. We can split our code into small pieces or chunks. So that when we need that code only that JS file will create. 
+Means If we split our code into multiple chunks or components. And then we build our application, it will generate muliple small JS files instead one big file.
+
+So How We can implement code splitting or lazy loading .....
+
+React provides a "lazy" named function that it accepting callback and in callback it accept the path of the file/component.
+
+
+
+import {lazy} from 'React';
+
+const LazyComponent = lazy(()=> import('../../Food'));
+
+
+Like this we can import our component using lazy. 
+What it does , it will load that js file when we need food component to show on ui and it will generate a separate file for this one only.
+Also when we click on it and then it will generate a file and load. it will take sometime to do this all of the things.
+lets say it will take some 2-3 secs.
+
+By that time what browser will so???????
+
+It will throw an Error in this case. Becuase by that time broswer needs js to load and js is taking some time to genarate and load.
+so meanwhile browser needs something to load/show.
+
+
+So for that react alos gave us, "Suspense". 
+
+import { Suspense } form 'react';
+
+
+<Suspense> <LazyComponent /> </Suspense/>
+
+
+So now we can import Suspense and wrap our component into Suspense so that while our lazycomponent tooks time to load. Suspense will handle the browser.
+Also We can provide "fallback="<h1> Loading....</h1>" " to Suspense. so that in that time it will so our fallback ui/component. it can be any compoennt of our chioce.
+
+
+So the final syntax is:
+
+
+import { lazy, Suspense} from 'react';
+
+
+<Suspense fallback="loading......">
+<LazyComponent />
+<Suspense>
+
+
+And in broswer network tab we can see our js file/chunks.
+
+Also if you cann't able to see fallback ui because of small application and faster network.
+because if our compoennt is  small  it will load faster .
+in that case we can check by changing our browser network to slow 3g or anyother of our choice.
+
+
+So the question is????? 
+A keeping a single Big JS file  or muliple small js files ???? what is the good way/thing?????
+
+
+Obvisouly, the small multiple files, Because A single Big file tooks a more time to load in the browser. it slows down the user experiance.
+But instead we can have small multiple files, and it loads into the browser when needs. it make our app robust/fast. 
+
+
+

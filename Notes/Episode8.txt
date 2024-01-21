@@ -1,0 +1,11 @@
+
+
+#Talks about Class components and functional components 
+#state and props
+#life cycle methods
+#class and function implementation side by side.
+
+
+
+
+
